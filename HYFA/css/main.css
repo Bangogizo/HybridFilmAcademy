@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
-
+*{
+    margin: 0;
+    padding:0;
+}
 body{
     font-family: poppins, Geneva, Tahoma, sans-serif;
     font-size: 16px;
@@ -87,4 +90,28 @@ nav ul li a{
 .change .bar3{
     -webkit-transform: rotate(-45deg) translate(-8px, 8px);
     transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
+#course{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#course img{
+    padding: 2rem;
+    width: 200px;
+    height: 200px;
+}
+
+footer{
+    text-align: center;
+    background: #3c4652;
+}
+
+footer a{
+    text-decoration: none;
+    color: gold;
 }
