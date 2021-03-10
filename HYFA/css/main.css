@@ -52,16 +52,18 @@ nav ul li a{
 .logo{
     position: absolute;
     right: 50px;
-    top: 50px;
+    top: 0px;
     font-weight: bolder;
     color: black;
     background: gold;
+    padding: .5rem;
 }
 
 #logo{
     position: relative;
     top: 25px;
-    left: 25px;
+    left: 205px;
+    
 }
 
 /** Menu Button **/
@@ -95,6 +97,14 @@ nav ul li a{
 
 
 #course{
+    text-align: center;
+}
+
+#course h2{
+    background: gold;
+}
+
+.courses{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -104,6 +114,41 @@ nav ul li a{
     padding: 2rem;
     width: 200px;
     height: 200px;
+}
+
+/* staff */
+#staffs{
+    text-align: center;
+}
+
+#staffs h2{
+    background: gold;
+}
+
+.faculty-staffs{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem;
+ 
+}
+
+.faculty-staffs img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: -25px;
+    left: -25px;
+    border-radius: 100% ;
+}
+
+.staff{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 14px solid #ffd700;
+    padding: 2rem;
+    margin: 2rem;
 }
 
 footer{
