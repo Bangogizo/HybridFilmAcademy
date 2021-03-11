@@ -12,8 +12,13 @@ body{
 header{
     background:url(../img/hyfa1.png);
     background-size: cover;
+    border-bottom: 2px solid gold;
   
 
+}
+
+#feature img{
+    width: 100%;
 }
 
 section {
@@ -151,6 +156,8 @@ nav ul li a{
     margin: 2rem;
 }
 
+/* Footer */
+
 footer{
     text-align: center;
     background: #3c4652;
@@ -160,3 +167,42 @@ footer a{
     text-decoration: none;
     color: gold;
 }
+
+footer .link {
+    background-color: gold;
+}
+
+footer .link .foot-nav {
+    list-style: none;
+
+}
+
+footer .link .foot-nav li{
+    padding: .5rem;
+}
+
+footer .link .foot-nav li a{
+    color: black;
+    padding: .5rem;
+}
+
+.icons{
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: whitesmoke;
+}
+
+.icons-logo{
+
+}
+
+.icons h2{
+    font-size: 100%;
+}
+
+.copyright{
+    padding: 1rem;
+    font-size: 60%;
+    color: white;
+}
+

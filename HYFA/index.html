@@ -8,6 +8,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale = 1">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="fontawesome/css/all.css">
 
     </head>
     <body>
@@ -39,7 +40,9 @@
             <!--Main Content-->
             <div>
                 <!--Feature-->
-                <section id='feature'></section>
+                <section id='feature'>
+                    <img name='slide' width="400" height="200">
+                </section>
                 <!--Short Course-->
                 <section id='course'>
                     <div><h2>Courses</h2></div>
@@ -64,16 +67,64 @@
             </div>
             <!--footer-->
             <footer>
-                <small>&copy; 2021 Hybrid Film Academy</small>
+                <div class="link">
+                    <ul class="foot-nav">
+                        <li><a href="pages/about.html">Who are we</a></li>
+                        <li><a href="pages/course.html">Take a course</a></li>
+                        <li><a href="pages/workshops.html">Workshops</a></li>
+                        <li><a href="pages/scholarship.html">Scholarship</a></li>
+                        <li><a href="pages/contact.html">Contact us</a></li>
+                    </ul>  
+                </div>
+                <div class="icons">
+                    <span class="icon-logo">
+                        <i class = 'fab fa-facebook'></i>
+                        <i class = 'fab fa-instagram'></i>
+                        <i class = 'fab fa-twitter'></i>
+                        <i class = 'fab fa-linkedIn'></i>
+                    </span>
+                    <h2>Connect with us</h2>
+                    
+                </div>
+                <div class="copyright">
+                    <small>&copy; 2021 Hybrid Film Academy</small>
                 -
                 <a href="sitemap.html" title="Links to all the pages on this website">Sitemap</a>
 
+
+                </div>
+                
             </footer>
         </div>
 
         
     </body>
     <script>
+        var i = 0;
+        var images = [];
+        var time = 3000; 
+
+
+        //Image list
+        images[0] = 'img/slide.jpg';
+        images[1] = 'img/slide2.jpg';
+        images[2] = 'img/slide3.jpg';
+
+        //change image function
+        function changeImg(){
+            document.slide.src = images[i];
+            if(i < images.length - 1){
+                i++;
+            } else {
+                i = 0;
+            }
+
+            setTimeout('changeImg()', time);
+        }
+
+        window.onload = changeImg
+
+
         const menuButton = document.getElementById('menu');
         const navBar = document.querySelector('.nav');
 
