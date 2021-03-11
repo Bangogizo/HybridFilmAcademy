@@ -12,9 +12,15 @@ body{
 header{
     background:url(../img/hyfa1.png);
     background-size: cover;
-    border-bottom: 2px solid gold;
+    border-bottom: 12px solid gold;
   
 
+}
+
+/*features*/
+
+#feature{
+    border-bottom: 11px solid gold;
 }
 
 #feature img{
@@ -23,6 +29,7 @@ header{
 
 section {
     font-size: 14px;
+    background-color: black;
     
 }
 
@@ -99,35 +106,56 @@ nav ul li a{
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-
+/*Course*/
 
 #course{
     text-align: center;
+    padding: 4rem;
 }
 
-#course h2{
+ h2{
     background: gold;
+    margin-bottom: 2rem;
+    padding: 2rem;
 }
 
 .courses{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
 }
 
 #course img{
-    padding: 2rem;
+    padding: 1rem;
     width: 200px;
     height: 200px;
+    background: gold;background: gold;
+}
+
+.apply{
+    padding-bottom: 2rem;
+}
+
+.apply h2{
+    padding: 0;
+    background-color: #4a4c5a;
+    width: 200px;
+    margin: 0 auto;
 }
 
 /* staff */
 #staffs{
     text-align: center;
+    padding: 4rem;
 }
 
 #staffs h2{
     background: gold;
+}
+
+#staffs h3{
+    color: gold;
 }
 
 .faculty-staffs{
@@ -160,7 +188,7 @@ nav ul li a{
 
 footer{
     text-align: center;
-    background: #3c4652;
+    background: #000;
 }
 
 footer a{
